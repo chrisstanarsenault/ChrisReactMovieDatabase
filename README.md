@@ -3,5 +3,4 @@
 ## A simple movie database app, building to learn more about React
 
 ***
-</br>
-<span style="font-size: 20px">Will add more to this as project grows</span>
+Will add more to this as project grows
