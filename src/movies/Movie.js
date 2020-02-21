@@ -1,9 +1,9 @@
-import React from 'react';
-import propTypes from 'prop-types';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import React from "react";
+import propTypes from "prop-types";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
 
-const POSTER_PATH = 'http://image.tmdb.org/t/p/w154';
+const POSTER_PATH = "http://image.tmdb.org/t/p/w154";
 
 const Movie = ({ movie }) => (
   <Link to={`${movie.id}`}>
@@ -14,11 +14,11 @@ const Movie = ({ movie }) => (
 export default Movie;
 
 // eslint-disable-next-line react/no-typos
-Movie.PropTypes = {
+Movie.propTypes = {
   movie: propTypes.shape({
     title: propTypes.string.isRequired,
-    id: propTypes.number.isRequired,
-  }).isRequired,
+    id: propTypes.number.isRequired
+  }).isRequired
 };
 
 export const Poster = styled.img`
